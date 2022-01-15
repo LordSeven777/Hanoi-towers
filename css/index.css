@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#canvas {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.disk {
+    border: 1px solid silver;
+    height: 50px;
+    position: absolute;
+    z-index: 5;
+}
+
+/* Tower */
+.towers {
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+.towers div {
+    width: 10px;
+    height: 400px;
+    background-color: black;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 0;
+}
+
+/* Tower 1 */
+.tower-1 {
+    left: 250px;
+}
+
+/* Tower 2 */
+.tower-2 {
+    left: 800px;
+}
+
+/* Tower 3 */
+.tower-3 {
+    left: 1350px;
+}
+
+/* .area {
+    width: 100%;
+    height: 330px;
+    background-color: red;
+    position: absolute;
+    bottom: 400px;
+    left: 0;
+} */
+
+.moves {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 55px;
+    line-height: 55px;
+    width: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: red;
+    font-size: 40px;
+}
+.moves #counter {
+    vertical-align: bottom;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.95);
+    width: 100%;
+    height: 100%;
+}
+
+form .form-group {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+form .form-group label {
+    display: inline-block;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 30px;
+}
+
+form .form-group input {
+    display: inline-block;
+    font-size: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+form .form-group button {
+    display: inline-block;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding: 1rem;
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 50px;
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+}
+form .form-group button:hover {
+    background-color: #cccc00;
+}
